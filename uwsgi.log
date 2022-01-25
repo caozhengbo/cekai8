@@ -1,0 +1,172 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Tue Jan 25 10:49:54 2022] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 24 January 2022 15:59:17
+os: Linux-3.10.0-1160.45.1.el7.x86_64 #1 SMP Wed Oct 13 17:20:51 UTC 2021
+nodename: VM-16-7-centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /tmp/Django_project
+writing pidfile to uwsgi.pid
+detected binary path: /tmp/Django_project/env/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /tmp/Django_project/cekai8
+your processes number limit is 15066
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:38938 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Jan 19 2022, 14:34:33)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x17624c0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file /cekai8/wsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4568)
+spawned uWSGI worker 1 (pid: 4569, cores: 2)
+spawned uWSGI worker 2 (pid: 4570, cores: 2)
+spawned uWSGI worker 3 (pid: 4571, cores: 2)
+spawned uWSGI worker 4 (pid: 4572, cores: 2)
+spawned uWSGI http 1 (pid: 4573)
+--- no python application found, check your startup logs for errors ---
+[pid: 4572|app: -1|req: -1/1] 49.7.47.130 () {42 vars in 1365 bytes} [Tue Jan 25 10:49:58 2022] GET /testrunner/project_list => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 4572|app: -1|req: -1/2] 49.7.47.130 () {42 vars in 1287 bytes} [Tue Jan 25 10:49:58 2022] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 4572|app: -1|req: -1/3] 49.7.47.130 () {42 vars in 1365 bytes} [Tue Jan 25 10:49:59 2022] GET /testrunner/project_list => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 4570|app: -1|req: -1/4] 49.7.47.130 () {42 vars in 1365 bytes} [Tue Jan 25 10:49:59 2022] GET /testrunner/project_list => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 4572|app: -1|req: -1/5] 49.7.47.130 () {42 vars in 1287 bytes} [Tue Jan 25 10:49:59 2022] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+SIGINT/SIGTERM received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 4573)
+worker 2 buried after 0 seconds
+worker 3 buried after 0 seconds
+worker 1 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.20 (64bit) on [Tue Jan 25 10:56:45 2022] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 24 January 2022 15:20:25
+os: Linux-3.10.0-1160.45.1.el7.x86_64 #1 SMP Wed Oct 13 17:20:51 UTC 2021
+nodename: VM-16-7-centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /tmp/Django_project
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/python3.8.1/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /tmp/Django_project/cekai8
+your processes number limit is 15066
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:36579 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Jan 19 2022, 14:34:33)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x2616470
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file /cekai8/wsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6269)
+spawned uWSGI worker 1 (pid: 6271, cores: 2)
+spawned uWSGI worker 2 (pid: 6272, cores: 2)
+spawned uWSGI worker 3 (pid: 6273, cores: 2)
+spawned uWSGI worker 4 (pid: 6274, cores: 2)
+spawned uWSGI http 1 (pid: 6275)
+--- no python application found, check your startup logs for errors ---
+[pid: 6273|app: -1|req: -1/1] 49.7.47.130 () {40 vars in 1343 bytes} [Tue Jan 25 10:56:48 2022] GET /testrunner/project_list => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6273|app: -1|req: -1/2] 49.7.47.130 () {42 vars in 1287 bytes} [Tue Jan 25 10:56:48 2022] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 6273|app: -1|req: -1/3] 49.7.47.130 () {40 vars in 1343 bytes} [Tue Jan 25 10:56:48 2022] GET /testrunner/project_list => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 6273|app: -1|req: -1/4] 49.7.47.130 () {42 vars in 1285 bytes} [Tue Jan 25 10:56:49 2022] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+SIGINT/SIGTERM received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 6275)
+worker 2 buried after 0 seconds
+worker 4 buried after 0 seconds
+worker 1 buried after 1 seconds
+worker 3 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.20 (64bit) on [Tue Jan 25 16:13:56 2022] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-44) on 24 January 2022 15:59:17
+os: Linux-3.10.0-1160.45.1.el7.x86_64 #1 SMP Wed Oct 13 17:20:51 UTC 2021
+nodename: VM-16-7-centos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /tmp/Django_project
+writing pidfile to uwsgi.pid
+detected binary path: /tmp/Django_project/env/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /tmp/Django_project
+your processes number limit is 15066
+your memory page size is 4096 bytes
+detected max file descriptor number: 100001
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:45477 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.1 (default, Jan 19 2022, 14:34:33)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+Python main interpreter initialized at 0x154c4a0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file /Django_project/cekai8/wsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17156)
+spawned uWSGI worker 1 (pid: 17157, cores: 2)
+spawned uWSGI worker 2 (pid: 17158, cores: 2)
+spawned uWSGI worker 3 (pid: 17159, cores: 2)
+spawned uWSGI worker 4 (pid: 17160, cores: 2)
+spawned uWSGI http 1 (pid: 17161)
+--- no python application found, check your startup logs for errors ---
+[pid: 17159|app: -1|req: -1/1] 49.7.47.130 () {38 vars in 1298 bytes} [Tue Jan 25 16:14:11 2022] GET /testrunner/login => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 17159|app: -1|req: -1/2] 49.7.47.130 () {38 vars in 1227 bytes} [Tue Jan 25 16:14:11 2022] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 17159|app: -1|req: -1/3] 49.7.47.130 () {40 vars in 1329 bytes} [Tue Jan 25 16:14:12 2022] GET /testrunner/login => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 17159|app: -1|req: -1/4] 49.7.47.130 () {42 vars in 1280 bytes} [Tue Jan 25 16:14:12 2022] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)

@@ -1,0 +1,8 @@
+django==2.2.3
+pymysql
+jsonpath
+xlsxwriter
+bs4
+httprunner==1.5.15
+pyyaml
+requests
