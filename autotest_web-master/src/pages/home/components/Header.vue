@@ -2,7 +2,7 @@
     <div>
         <div class="nav-header">
 
-            <span style="color: white; font-size: 25px; margin-left: 10px">caozhengbo测试平台</span>
+            <span style="color: white; font-size: 25px; margin-left: 10px">sunck测试平台</span>
             <span class="right">
                 <div style="float: right; color: #d9d9d9; margin-right: 100px">
 

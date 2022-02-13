@@ -98,7 +98,14 @@
             gettagcount(){
                 this.$api.gettagcount({params:{
                     project: this.$route.params.id
-                }}).then(res =>{            
+                }}).then(res =>{  
+					
+					/*
+					{
+						typename:["冒烟","集成"],
+						countlist:[5,6]
+					}
+					*/
                     this.option.xAxis={ data: res.typename},
                     this.option.series= [{
                         name: '',
@@ -143,10 +150,13 @@
             },
 
             getProjectDetail() {
-                console.log(this.$route.params.id)
                 const pk = this.$route.params.id;
                 this.$api.getProjectDetail(pk).then(res => {
-                    this.projectInfo = res
+					if (res["success"]){
+						this.projectInfo = res
+					}else{
+						this.$router.push({name:"ProjectList"});
+					}
                 })
             }
         },

@@ -94,7 +94,7 @@ router.beforeEach((to, from, next) => {
 /* eslint-disable no-new */
 new Vue({
     el: '#app',
-    router,
+    router,//路由，指定要展示哪个页面
     store,
     components: {App},
     template: '<App/>',

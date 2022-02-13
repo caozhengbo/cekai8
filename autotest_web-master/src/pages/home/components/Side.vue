@@ -15,19 +15,18 @@
             <!-- <el-menu-item v-for="item of side_menu" :index="item.url" :key="item.url" :disabled="$store.state.routerName === 'ProjectList'">
                 <span class="iconfont" v-html="item.code"></span>&nbsp;&nbsp;{{item.name}}
             </el-menu-item>  -->
- 
+
           <template v-for="item in side_menu" >
                 <template v-if="item.subs">
                     <el-submenu :index="item.index" :key="item.index" :disabled="$store.state.routerName === 'ProjectList'">
-                        <template slot="title">                         
+                        <template slot="title">
                             <span :class="item.code"  slot="title"></span>&nbsp;&nbsp;{{ item.title }}
                         </template>
                         <template v-for="subItem in item.subs" :disabled="$store.state.routerName === 'ProjectList'">
                             <el-submenu
                                 v-if="subItem.subs"
                                 :index="subItem.index"
-                                :key="subItem.index"
-                            >
+                                :key="subItem.index">
                                 <template slot="title">{{ subItem.title }}</template>
                                 <el-menu-item
                                     v-for="(threeItem,i) in subItem.subs"
@@ -38,21 +37,22 @@
                             <el-menu-item
                                 v-else
                                 :index="subItem.index"
-                                :key="subItem.index"
-                            >{{ subItem.title }}</el-menu-item>
+                                :key="subItem.index">
+                                {{ subItem.title }}
+                            </el-menu-item>
                         </template>
                     </el-submenu>
                 </template>
                 <template v-else-if="item.title=='项目概况'">
-                    <el-menu-item :index="item.index" :key="item.index" :disabled="$store.state.routerName === 'ProjectList'"> 
-                        <template slot="title">                         
+                    <el-menu-item :index="item.index" :key="item.index" :disabled="$store.state.routerName === 'ProjectList'">
+                        <template slot="title">
                             <span :class="item.code"  slot="title"></span>&nbsp;&nbsp;{{ item.title }}
                         </template>
                     </el-menu-item>
                 </template>
                 <template v-else>
-                    <el-menu-item :index="item.index" :key="item.index"> 
-                        <template slot="title">                         
+                    <el-menu-item :index="item.index" :key="item.index">
+                        <template slot="title">
                             <span :class="item.code"  slot="title"></span>&nbsp;&nbsp;{{ item.title }}
                         </template>
                     </el-menu-item>
@@ -68,49 +68,54 @@ import bus from '../components/bus';
         data() {
             return {
                 side_menu: [
-                    {code:'el-icon-s-home',
-                    title:'首  页',
-                    index:'ProjectList'},
-                    {title: "项目概况", index: "ProjectDetail", code: "el-icon-collection"},
-                    { 
-                    code: 'el-icon-menu', 
-                    index: 'api',                   
-                    title: 'API自动化',
-                    subs:[
-                        // {name: "项目概况", url: "ProjectDetail", code: "&#xe64a;"},
-                        // {name: "数据库配置", url: "DataBase", code: "&#xe63c;"},
-                        {title: "API 模板", index: "RecordApi",},
-                        {title: "测试用例", index: "AutoTest", },
-                        {title: "配置管理", index: "RecordConfig",},
-                        {title: "全局变量", index: "GlobalEnv", },
-                        {title: "域名管理", index: "HostIP", },
-                        {title: "驱动代码", index: "DebugTalk", },
-                        {title: "定时任务", index: "Task",},
-                        {title: "历史报告", index: "Reports", },
-                        {title: "异步回执", index: "TaskMeta", },
-                     
-                    ]
+                    {
+                        code:'el-icon-s-home',
+                        title:'首  页',
+                        index:'ProjectList',
                     },
                     {
-                    code: 'el-icon-s-order',
-                    index: 'webselemium',
-                    title: 'web自动化',
-                    subs: [    
-                        {
-                            index: 'webtestcaselist',
-                            title: 'UI用例管理'
-                        },
-                        {
-                            index: 'UICaseTestPlan',
-                            title: 'UI测试计划'
-                        },
-                   {
-                            index: 'UIReportList',
-                            title: 'UI测试报告'
-                        },
-                    ]
+                        title: "项目概况",
+                        index: "ProjectDetail",
+                        code: "el-icon-collection",
+                    },
+                    {
+                        code: 'el-icon-menu',
+                        index: 'api',
+                        title: 'API自动化',
+                        subs:[
+                            // {name: "项目概况", url: "ProjectDetail", code: "&#xe64a;"},
+                            // {name: "数据库配置", url: "DataBase", code: "&#xe63c;"},
+                            {title: "API 模板", index: "RecordApi",},
+                            {title: "测试用例", index: "AutoTest", },
+                            {title: "配置管理", index: "RecordConfig",},
+                            {title: "全局变量", index: "GlobalEnv", },
+                            {title: "域名管理", index: "HostIP", },
+                            {title: "驱动代码", index: "DebugTalk", },
+                            {title: "定时任务", index: "Task",},
+                            {title: "历史报告", index: "Reports", },
+                            {title: "异步回执", index: "TaskMeta", },
+                        ]
+                    },
+                    {
+                        code: 'el-icon-s-order',
+                        index: 'webselemium',
+                        title: 'web自动化',
+                        subs: [
+                            {
+                                index: 'webtestcaselist',
+                                title: 'UI用例管理'
+                            },
+                            {
+                                index: 'UICaseTestPlan',
+                                title: 'UI测试计划'
+                            },
+                            {
+                                index: 'UIReportList',
+                                title: 'UI测试报告'
+                            },
+                        ]
 
-                },
+                    },
                 ],
             }
         },

@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
 import Home from '@/pages/home/Home'
 import Register from '@/pages/auth/Register'
 import Login from '@/pages/auth/Login'
@@ -19,6 +20,9 @@ import TaskMeta from "@/pages/reports/TaskMeta";
 import webtestcaselist from "@/pages/uitestpage/webtest/webtestcaselist"
 import UICaseTestPlan from "@/pages/uitestpage/uitestcaseplan/UICaseTestPlan"
 import UIReportList from "@/pages/reports/UIReportList"
+
+
+
 Vue.use(Router);
 
 export default new Router({
@@ -31,14 +35,16 @@ export default new Router({
             meta: {
                 title: '用户注册'
             }
-        }, {
+        }, 
+        {
             path: '/testrunner/login',
             name: 'Login',
             component: Login,
             meta: {
                 title: '用户登录'
             }
-        }, {
+        }, 
+        {
 
             path: '/testrunner',
             name: 'Index',
@@ -198,4 +204,3 @@ export default new Router({
 
     ]
 })
-

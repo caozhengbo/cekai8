@@ -9,14 +9,14 @@
                     <div>
 
                     </div>
-               </el-col>
+                </el-col>
             </el-row>
         </el-header>
         <el-main style="padding: 0px">
             <el-row>
                 <el-col :span="24">
                     <div>
-                        <div id="form-title">caozhengbo自动化平台</div>
+                        <div id="form-title">sunck自动化平台</div>
                         <form id="submit-form">
                             <div id="form-content">
                                 <div id="form-msg" style="text-align: center">注册账号</div>
@@ -150,14 +150,8 @@
 
             handleRegisterSuccess(resp) {
                 if (resp['success']) {
-                    this.$message.success({
-                        message: resp["msg"],
-                        duration: 2000,
-                        center: true
-                    })
                     this.$router.push('/testrunner/login')
                 } else {
-
                     this.$message.error({
                         message: resp["msg"],
                         duration: 2000,
@@ -168,9 +162,12 @@
             ,
             submitForm(formName) {
                 if (this.validateUser() && this.validatePassword() && this.validateRepwd() && this.validateEmail()) {
+
+                    //ajax请求  url 参数
                     this.$api.register(this.registerForm).then(resp => {
                         this.handleRegisterSuccess(resp)
                     })
+
                 }
             }
         }

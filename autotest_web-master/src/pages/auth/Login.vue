@@ -5,16 +5,16 @@
                 <div class="login-box-left">
                     <img src="~@/assets/images/login-left-night.f43356b5.png" alt="">
                 <div class="box-left-content">
-                    <div class="slogan">caozhengbo自动化平台</div>
+                    <div class="slogan">sunck自动化平台</div>
                 </div>
-                
+
                 </div>
                 <div class="login-box-right">
-                
+
                 <div class="login-box-content">
                     <div class="login-box-inp">
                         <form id="submit-form">
-                            
+
                                 <div id="form-msg" style="text-align: center">登录账号</div>
                                 <div id="form-inputs">
                                     <div class="form-input-div">
@@ -39,20 +39,20 @@
                                     <span>没有账户，<router-link to="/testrunner/register">立即注册</router-link></span>
                                 </div>
 
-                        
+
                         </form>
                         </div>
                    </div>
 
-           
+
                 </div>
                 </div>
 
         <el-footer class="copyright">
-            <span>©Copyright 2021 caozhengbo</span>
+            <span>©Copyright 2021 sunck</span>
         </el-footer>
     </el-container>
-    
+
 </template>
 
 <script>
@@ -88,9 +88,8 @@
             },
             handleLoginSuccess(resp) {
                 if (resp.success) {
-					console.log(resp.user)
-					console.log("-------------------------------1")
                     this.$router.push({name: 'ProjectList'});
+                    
                     this.$store.commit("isLogin", resp.token);
                     this.$store.commit("setUser", resp.user);
                     this.$store.commit("setUseractualname",resp.name);
@@ -100,8 +99,6 @@
                     this.setLocalValue("routerName", 'ProjectList');
                     this.setLocalValue("useractualname", resp.name);
                 } else {
-					console.log(resp.user)
-					console.log("-------------------------------2")
                     this.$message.error({
                         message: resp.msg,
                         duration: 2000,

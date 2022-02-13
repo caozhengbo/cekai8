@@ -273,10 +273,16 @@
             },
             getProjectList() {
                 this.$api.getProjectList().then(resp => {
-                    this.projectData = resp;
+					if (resp["success"]){
+						this.projectData = resp;
+					} else {
+						//未登录
+						this.$router.push({name:"Login"});
+					}
                 })
             },
             getPagination(url) {
+				console.log("----1111------", url)
                 this.$api.getPagination(url).then(resp => {
                     this.projectData = resp;
                 })

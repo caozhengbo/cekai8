@@ -27,7 +27,22 @@
         components: {
             HomeHeader,
             HomeSide
-        }
+        },
+		methods:{
+			islogin() {
+				//获取localStorage中token的值，如果null，进入登录界面
+				// console.log("---------token------------1")
+				// token = this.getLocalValue("token")
+				// console.log("---------token------------2")
+				// console.log("---------token------------", token)
+				// if (token == "null"){
+				// 	this.$router.push({name:"Login"});
+				// }
+			},
+		},
+		mounted() {
+		    this.islogin()
+		},
 
     }
 </script>
