@@ -137,12 +137,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-# STATIC_URL = '/static/'
+STATIC_URL = '/static/'
 
 # 设置vue的静态文件
-# STATICFILES_DIRS = [
-#    os.path.join(BASE_DIR, "autotest_web-master/dist/static")
-# ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "autotest_web-master/dist/static")
+]
+# python manage.py collectstatic 迁移文件
+# tail -f uwsgi.log 监听文件
+# /var/www/cekai8/static
+STATIC_ROOT = "/var/www/cekai8/static"
 
 # STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, "collectedstatic")
@@ -167,6 +171,6 @@ USE_TZ = True
 #     os.path.join(BASE_DIR, 'static'),
 # )
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, "/static/")  # 使用 collectstatic后收集的静态文件的存放绝对路径
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # 存放静态文件的目录，其中也可以包含url
+# STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, "/static/")  # 使用 collectstatic后收集的静态文件的存放绝对路径
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]  # 存放静态文件的目录，其中也可以包含url
