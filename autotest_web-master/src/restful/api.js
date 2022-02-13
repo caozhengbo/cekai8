@@ -5,9 +5,9 @@ import {Message} from 'element-ui';
 
 
 
-// export const baseUrl = "http://110.42.184.157:8000";
-export const baseUrl = "http://110.42.184.157";
-// export const baseUrl = "http://192.168.145.128:8000";
+export const baseUrl = "http://110.42.184.157:8000";
+// export const baseUrl = "http://110.42.184.157";
+//export const baseUrl = "http://192.168.145.128:8000";
 
 axios.defaults.withCredentials = true;
 axios.defaults.baseURL = baseUrl;
